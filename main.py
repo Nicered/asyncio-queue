@@ -5,7 +5,7 @@ import time
 
 
 class Hub:
-    # 크롤러 클래스와 래핑 클래스의 비동기적 태스크를 관리하는 클래스
+    # Management of pub and sub
     def __init__(self):                
         self.queue = asyncio.Queue()    
         self.is_finished = False         
